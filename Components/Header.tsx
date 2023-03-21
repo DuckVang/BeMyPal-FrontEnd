@@ -1,12 +1,12 @@
 export default function Header() {
   return (
-    <header className="text-base overflow-hidden">
-      <nav className="py-4 px-2 flex justify-between font-medium items-center">
+    <header className="relative z-0 overflow-hidden bg-[#202020] text-base">
+      <nav className="flex items-center justify-between py-4 px-2 font-medium [&>*]:bg-inherit">
         <div className="flex flex-1">
           <button className="mr-6 ">
-            <div className="sphere absolute bg-slate-200 -left-6 -top-5 rounded-full  w-[100px] h-[100px] -z-1"></div>
+            <div className="sphere -z-1 absolute -left-8 -top-2 h-[100px] w-[100px] rounded-full bg-[#D9D9D9]"></div>
 
-            <p className="relative z-1">button</p>
+            <p className="z-1 relative ">button</p>
           </button>
           <ul className="flex gap-4 justify-self-start">
             <li>Play</li>
@@ -15,7 +15,7 @@ export default function Header() {
         </div>
 
         <input
-          className="search-bar mr-7 border-2 border-cyan-200 rounded-md p-0.5"
+          className="search-bar mr-7 rounded-md border-2 border-cyan-200 p-0.5"
           type="text"
           placeholder="Search"
         />
