@@ -3,7 +3,7 @@ import SignUp from "./SignUp";
 import SearchBar from "./SearchBar";
 export default function Header() {
   return (
-    <header className="relative z-0 overflow-hidden bg-[#202020] text-base">
+    <header className=" sticky top-0 z-1 overflow-hidden bg-[#202020] text-base ">
       <nav className="flex items-center justify-between py-4 px-2 font-medium [&>*]:bg-inherit">
         <div className="flex flex-1">
           <button className="mr-6 ">
