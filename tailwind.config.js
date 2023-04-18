@@ -6,17 +6,6 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      gridTemplateAreas: {
-        main: ["a a c", "b b ."],
-      },
-      gridTemplateColumns: {
-        main: "1fr 1fr 1fr",
-      },
-      gridTemplateRows: {
-        main: "2fr 1fr",
-      },
-    },
   },
-  plugins: [require("@savvywombat/tailwindcss-grid-areas")],
+  plugins: [require("daisyui")],
 };
