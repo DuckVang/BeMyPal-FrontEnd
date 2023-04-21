@@ -11,7 +11,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex flex-col h-max">
+      <body className="h-screen min-h-screen">
         <Header />
 
         {children}
