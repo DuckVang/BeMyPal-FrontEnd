@@ -8,5 +8,5 @@ export const Products: FC = () => {
     // element in this array. see: https://reactjs.org/docs/lists-and-keys.html
     users.push(<Product />);
   }
-  return <div className="Products flex flex-row gap-3 flex-wrap">{users}</div>;
+  return <div className="Products grid grid-cols-4 gap-3">{users}</div>;
 };
