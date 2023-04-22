@@ -12,10 +12,10 @@ export const Product: FC = () => {
 
       <div className="card-body">
         <div className="upper flex flex-row justify-between">
-          <div className="title w-fit">{user.firstName + " " + user.lastName}</div>
-          <div className="rating">
+          <div className="title w-fit text-xl">{user.firstName + " " + user.lastName}</div>
+          <div className="rating h-fit self-end">
             <div className="mask mask-star bg-yellow-400"></div>
-            <div className="rate">4.5 - 5</div>
+            <div className="rate">4.5 <span className="text-xs text-gray-50">(109)</span></div>
           </div>
         </div>
         <div className="badge-primary badge">{user.subscriptionTier}</div>
