@@ -10,8 +10,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="h-screen min-h-screen">
+    <html lang="en" data-theme="mytheme">
+      <body className="h-screen min-h-screen bg-neutral">
         <Header />
 
         {children}
