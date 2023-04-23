@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className="container relative z-10 m-auto flex w-full  flex-col  bg-black">
-      <div className="mx-auto flex max-h-[550px] w-full flex-row justify-between">
+      <div className="mx-auto flex min-h-[550px] max-h-[750px] w-full flex-row justify-between">
         <SlidePanel />
         <LeaderBoard />
       </div>
