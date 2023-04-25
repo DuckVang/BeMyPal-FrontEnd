@@ -1,5 +1,5 @@
 import { FC } from "react";
-import createRandomUser from "../../utils/testUser";
+import createRandomUser from "../utils/testUser";
 
 export const Product: FC = () => {
   const user = createRandomUser();
