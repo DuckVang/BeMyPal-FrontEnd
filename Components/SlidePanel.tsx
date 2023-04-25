@@ -23,7 +23,7 @@ export const SlidePanel: FC = () => {
           })}
         </div>
       </div>
-      <div className="lower-panel h-1/5 bg-slate-400"> lower panel</div>
+      <div className="lower-panel h-1/5 bg-neutral">lower panel</div>
     </div>
   );
 };
@@ -31,7 +31,11 @@ export const SlidePanel: FC = () => {
 const Service = (props: { img: string; link: string }) => {
   return (
     <a className="carousel-item max-h-full w-full max-w-full" href={props.link}>
-      <img src={props.img} alt="" className="w-full object-fill" />
+      <img
+        src={props.img}
+        alt=""
+        className="w-full object-fill contrast-50 filter"
+      />
     </a>
   );
 };

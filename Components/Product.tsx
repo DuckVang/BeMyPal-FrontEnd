@@ -5,7 +5,7 @@ export const Product: FC = () => {
   const user = createRandomUser();
 
   return (
-    <div className="Product min-w-64 card-compact min-h-48 card-bordered card w-full ">
+    <div className="Product min-w-64 card-compact min-h-48 card-bordered card w-full bg-neutral">
       <figure>
         <img src={user.avatar} />
       </figure>

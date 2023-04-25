@@ -18,8 +18,8 @@ export default function Home() {
   }
 
   return (
-    <main className="container relative z-10 m-auto flex w-full  flex-col  bg-black">
-      <div className="mx-auto flex max-h-[750px] min-h-[550px] w-full flex-row justify-between">
+    <main className="container relative z-10 m-auto flex w-full  flex-col  bg-base-100 ">
+      <div className="mx-auto my-6 flex max-h-[750px] min-h-[550px] w-full flex-row justify-between">
         <SlidePanel />
         <LeaderBoard />
       </div>
