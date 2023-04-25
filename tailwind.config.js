@@ -21,7 +21,7 @@ module.exports = {
       {
         mytheme: {
           // ** primary is purple
-          primary: "#a991f7" /* Primary color */,
+          primary: "#AF32F0" /* Primary color */,
           "primary-focus": "#8462f4" /* Primary color - focused */,
           "primary-content": "#ffffff",
           //** for now no */
@@ -33,14 +33,14 @@ module.exports = {
           "accent-focus": "#2aa79b" /* Accent color - focused */,
           "accent-content": "#ffffff",
 
-          neutral: "#3d4451" /* Neutral color */,
-          "neutral-focus": "#2a2e37" /* Neutral color - focused */,
+          neutral: "#252833" /* Neutral color */,
+          "neutral-focus": "#20232C" /* Neutral color - focused */,
           "neutral-content": "#ffffff",
 
-          "base-100": "#ffffff",
-          "base-200": "#f9fafb" /* Base color, a little darker */,
-          "base-300": "#d1d5db" /* Base color, even more darker */,
-          "base-content": "#1f2937",
+          "base-100": "#141419",
+          "base-200": "#1E2026" ,
+          "base-300": "#303030" ,
+          "base-content": "#ffffff",
 
           info: "#2094f3" /* Info */,
           success: "#009485" /* Success */,
