@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 export default function Login() {
   function handleLogin() {}
 
   return (
-    <button onClick={() => handleLogin()} className="rounded-md bg-[#303030] w-16 h-8">
-      Login
-    </button>
+    <Link href={`/Register`}>
+      <button className="h-8 w-16 rounded-md bg-[#303030]">Login</button>
+    </Link>
   );
 }
