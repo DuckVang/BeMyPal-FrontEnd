@@ -4,19 +4,26 @@ import styles from "./page.module.css";
 
 import { SlidePanel } from "../Components/SlidePanel";
 import LeaderBoard from "../Components/LeaderBoard";
-import { Products } from "../Components/Products";
+
+import { Product } from "../Components/Product";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const users = [];
+  for (let i = 0; i < 20; i++) {
+    // note: we are adding a key prop here to allow react to uniquely identify each
+    // element in this array. see: https://reactjs.org/docs/lists-and-keys.html
+    users.push(<Product />);
+  }
+
   return (
-    <main className="container relative z-10 m-auto flex w-full  flex-col  bg-black">
-      <div className="mx-auto flex min-h-[550px] max-h-[750px] w-full flex-row justify-between">
+    <main className="container   relative z-10 m-auto px-20 flex w-full  flex-col  bg-base-100 ">
+      <div className="mx-auto my-6 flex max-h-[750px] min-h-[550px] w-full flex-row justify-between">
         <SlidePanel />
         <LeaderBoard />
       </div>
-
-      <Products />
+      <div className="Products grid grid-cols-4 gap-3">{users}</div>;
     </main>
   );
 }

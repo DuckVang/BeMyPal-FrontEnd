@@ -13,25 +13,43 @@ export const SlidePanel: FC = () => {
   }
 
   return (
-    <div className="flex w-[var(--main-cont-width)] flex-col gap-12 ">
-      <div className="h-4/5 ">
-        <div className="list-of-services flex-basis carousel h-full ">
+    <div className="relative flex w-[var(--main-cont-width)] flex-col gap-12 ">
+      <div className="relative h-4/5">
+        <div className="list-of-services flex-basis carousel absolute h-full ">
           {Services.map((element, index) => {
             return (
-              <Service key={index} img={element.img} link={element.link} />
+              <Service
+                key={index}
+                img={element.img}
+                link={element.link}
+                index={index}
+              />
             );
           })}
         </div>
+        <div className="absolute bottom-0 flex w-full justify-center gap-2 py-2">
+          <a href="#item1" className="btn-circle btn-xs btn"></a>
+          <a href="#item2" className="btn-circle btn-xs btn"></a>
+          <a href="#item3" className="btn-circle btn-xs btn"></a>
+        </div>
       </div>
-      <div className="lower-panel h-1/5 bg-slate-400"> lower panel</div>
+      <div className="lower-panel h-1/5 bg-neutral">lower panel</div>
     </div>
   );
 };
 
-const Service = (props: { img: string; link: string }) => {
+const Service = (props: { img: string; link: string; index: number }) => {
   return (
-    <a className="carousel-item max-h-full w-full max-w-full" href={props.link}>
-      <img src={props.img} alt="" className="w-full object-fill" />
+    <a
+      className="carousel-item max-h-full w-full max-w-full"
+      href={props.link}
+      id={"item" + props.index}
+    >
+      <img
+        src={props.img}
+        alt=""
+        className="w-full object-fill contrast-50 filter"
+      />
     </a>
   );
 };
