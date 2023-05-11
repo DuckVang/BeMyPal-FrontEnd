@@ -1,6 +1,5 @@
 export default function LeaderBoard() {
   function handleSignUp() {}
 
-  return <div className=" bg-neutral rounded-2xl">leaderboard</div>;
-
+  return <div className=" rounded-2xl bg-neutral">leaderboard</div>;
 }
