@@ -18,12 +18,12 @@ export default function Home() {
   }
 
   return (
-    <main className="container   relative z-10 m-auto px-20 flex w-full  flex-col  bg-base-100 ">
+    <main className="container relative z-10 m-auto flex w-full flex-col bg-base-100  px-20 ">
       <div className="mx-auto my-6 flex max-h-[750px] min-h-[550px] w-full flex-row justify-between">
         <SlidePanel />
         <LeaderBoard />
       </div>
-      <div className="Products grid grid-cols-4 gap-3">{users}</div>;
+      <div className="Products grid grid-cols-3 gap-8">{users}</div>
     </main>
   );
 }
