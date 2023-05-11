@@ -13,7 +13,7 @@ export const SlidePanel: FC = () => {
   }
 
   return (
-    <div className="relative flex w-[var(--main-cont-width)] flex-col gap-12 ">
+    <div className="relative flex flex-col gap-12 col-span-2 ">
       <div className="relative h-4/5">
         <div className="list-of-services flex-basis carousel absolute h-full ">
           {Services.map((element, index) => {
