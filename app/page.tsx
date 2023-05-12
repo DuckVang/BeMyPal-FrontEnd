@@ -23,7 +23,8 @@ export default function Home() {
         <SlidePanel />
         <LeaderBoard />
       </div>
-      <div className="Products grid grid-cols-3 gap-8 mt-20">{users}</div>
+      <h1 className="mt-10 text-3xl font-semibold">Find your pals</h1>
+      <div className="Products grid grid-cols-3 gap-8 mt-10">{users}</div>
     </main>
   );
 }
