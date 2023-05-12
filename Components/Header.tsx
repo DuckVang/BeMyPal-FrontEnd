@@ -1,14 +1,19 @@
 import SearchBar from "./SearchBar";
 import Link from "next/link";
+import Image from "next/image";
+import mascotIcon from "../public/mascot.svg";
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 overflow-hidden bg-base-200 py-3 px-4 text-base">
+    <header className="sticky top-0 z-50 overflow-hidden bg-base-200 py-3 px-6 text-base ">
       <nav className="flex flex-row items-center justify-between  font-medium ">
         <div className="flex flex-1 text-xl">
-          <button className="mr-6 ">
-            <div className="sphere -z-1 absolute -left-8 -top-2 h-[100px] w-[100px] rounded-full bg-[#D9D9D9]"></div>
-
-            <p className="z-1 relative ">button</p>
+          <button className="mr-6 w-24 ">
+            <Image
+              className="h-[5rem] -top-1 absolute w-fit"
+              priority
+              src={mascotIcon}
+              alt="mascot"
+            ></Image>
           </button>
           <ul className="flex gap-4 justify-self-start">
             <li>Play</li>
