@@ -1,11 +1,17 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "./page.module.css";
-
+import "@fortawesome/fontawesome-svg-core/styles.css"; 
 import { SlidePanel } from "../Components/SlidePanel";
 import LeaderBoard from "../Components/LeaderBoard";
 
 import { Product } from "../Components/Product";
+
+
+import { config } from "@fortawesome/fontawesome-svg-core";
+// Tell Font Awesome to skip adding the CSS automatically 
+// since it's already imported above
+config.autoAddCss = false; 
 
 const inter = Inter({ subsets: ["latin"] });
 
