@@ -25,11 +25,11 @@ export default function Header() {
 
         <div className="flex gap-3 text-sm">
           <Link href={`/Register`}>
-            <button className="w-18 h-8 rounded-md bg-[#303030] px-4">
+            <button className="w-18 h-8 rounded-2xl bg-[#303030] px-4">
               Login
             </button>
           </Link>
-          <button className="w-18 h-8 rounded-md bg-[#AF32F0] px-4">
+          <button className="w-18 h-8 rounded-2xl bg-[#AF32F0] px-4">
             Sign Up
           </button>
         </div>
