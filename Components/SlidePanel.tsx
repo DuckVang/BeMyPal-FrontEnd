@@ -1,6 +1,8 @@
 import { FC } from "react";
 import Image from "next/image";
 import { faker } from "@faker-js/faker";
+import mascotIcon from "../public/mascot-2.svg";
+
 export const SlidePanel: FC = () => {
   function handleSignUp() {}
 
@@ -34,7 +36,12 @@ export const SlidePanel: FC = () => {
         </div>
       </div>
       <div className="lower-panel h-1/5 rounded-2xl bg-neutral">
-        lower panel
+        <Image
+          className="h-md w-fit my-auto"
+          priority
+          src={mascotIcon}
+          alt="mascot"
+        ></Image>
       </div>
     </div>
   );
