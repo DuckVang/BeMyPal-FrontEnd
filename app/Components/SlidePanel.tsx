@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Image from "next/image";
 import { faker } from "@faker-js/faker";
-import mascotIcon from "../public/mascot-2.svg";
+import mascotIcon from "../../public/mascot-2.svg";
 
 export const SlidePanel: FC = () => {
   function handleSignUp() {}
