@@ -1,21 +1,26 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "./page.module.css";
-import "@fortawesome/fontawesome-svg-core/styles.css"; 
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import { SlidePanel } from "../Components/SlidePanel";
 import LeaderBoard from "../Components/LeaderBoard";
 
 import { Product } from "../Components/Product";
 
-
+import axios from "axios";
 import { config } from "@fortawesome/fontawesome-svg-core";
-// Tell Font Awesome to skip adding the CSS automatically 
+// Tell Font Awesome to skip adding the CSS automatically
 // since it's already imported above
-config.autoAddCss = false; 
+config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default async function Home() {
+  
+  const data = await axios.get("http://localhost:8005/api/products");
+
+  console.log(data);
+
   const users = [];
   for (let i = 0; i < 20; i++) {
     // note: we are adding a key prop here to allow react to uniquely identify each
@@ -30,7 +35,7 @@ export default function Home() {
         <LeaderBoard />
       </div>
       <h1 className="mt-10 text-3xl font-semibold">Find your pals</h1>
-      <div className="Products grid grid-cols-3 gap-8 mt-10">{users}</div>
+      <div className="Products mt-10 grid grid-cols-3 gap-8">{users}</div>
     </main>
   );
 }
