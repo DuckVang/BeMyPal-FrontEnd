@@ -7,7 +7,6 @@ import LeaderBoard from "../Components/LeaderBoard";
 
 import { Product } from "../Components/Product";
 
-import axios from "axios";
 import { config } from "@fortawesome/fontawesome-svg-core";
 // Tell Font Awesome to skip adding the CSS automatically
 // since it's already imported above
@@ -17,9 +16,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default async function Home() {
   
-  const data = await axios.get("http://localhost:8005/api/products");
+  
 
-  console.log(data);
+  
 
   const users = [];
   for (let i = 0; i < 20; i++) {
